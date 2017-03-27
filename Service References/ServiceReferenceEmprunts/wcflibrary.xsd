@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/wcflibrary" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/wcflibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfclsCountEmprunt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="clsCountEmprunt" nillable="true" type="tns:clsCountEmprunt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfclsCountEmprunt" nillable="true" type="tns:ArrayOfclsCountEmprunt" />
+  <xs:complexType name="clsCountEmprunt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NbreEmprunt" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="clsCountEmprunt" nillable="true" type="tns:clsCountEmprunt" />
+</xs:schema>
